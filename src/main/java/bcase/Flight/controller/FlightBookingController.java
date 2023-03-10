@@ -14,5 +14,4 @@ public interface FlightBookingController {
     ResponseEntity<Booking> save (@RequestBody BookingDTO bookingDTO);
 
 
-
 }
