@@ -8,7 +8,6 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 @Entity
@@ -42,6 +41,7 @@ public class Booking {
     @Column(length = 30, nullable = false)
     @NotEmpty(message = "Questo campo è obbligatorio")
     private String namePassenger;
+    @Column
     @NotEmpty(message = "Questo campo è obbligatorio")
     private int reservedSeats;
 
